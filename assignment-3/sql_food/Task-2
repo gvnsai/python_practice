@@ -1,0 +1,8 @@
+Task 2 – Query the database:
+
+Create a Python script (sql_food.py) to perform the following tasks:
+• List the distinctive businesses that have had at least 1 violation ordered alphabetically to the
+console and then write their name, address, zip code and city into a new database table called
+“Previous Violations”.
+• Print a count of the violations for each business that has at least 1 violation to the console
+along with their name ordered by the number of violations. *SQL Hint: Group By*
