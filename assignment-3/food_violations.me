@@ -1,0 +1,105 @@
+                                                    Data Analysis and Visualisation
+
+
+Assignment Description :
+
+This assignment will test your ability to use python to interact with databases, excel
+workbooks, perform data analysis using NumPy, and use matplotlib to generate graphs. Raw
+data will be provided and will need to be stored in a database. You will then need to write
+scripts to query the database and pull out subsets of the data. These subsets will then need
+to be further analysed and have graphs procedurally generated to display relevant
+information. All of the investigations should yield results that you can present in a professional
+report.
+
+Your submission should include:
+
+- A word document (preferred), PDF Is also acceptable, other formats are not
+allowed. This should contain your results presented as a scientific report.
+- .py files containing your code. You should submit a separate .py file for each
+problem.
+- A readme.txt file for your scripts
+
+Problem Statement:
+
+As more and more industries are becoming data driven, being able to process a large volume
+of raw data and produce a concise and insightful summary is becoming more and more
+important. As a data consultant for a government agency, you are tasked with processingsome food inspection and health violation data and producing a report summarising some of
+the information.
+The raw data is provided in 2 excel spreadsheets: (A) Inspections.xlsx and (B) Violations.xlsx.
+You will need to complete the below tasks and present your results in a report.
+For each python script, you should handle the case where the script has already been run and
+therefore the data already exists. This could mean checking to see if the table already existed
+in the database, or a specific workbook/worksheet already exists. In each case, you should
+decide what to do (display error ? Create a book/sheet with a different name ? Delete the
+existing version and re-run the script ?).
+You should write a readme.txt file to accompany your scripts. Prepare a brief usage guide, any
+requirements and assumptions, and document what each script does and any other important
+info (for example; how does each script deal with database tables/excel sheets already
+existing).
+
+-------------------------------------------------------------------------------------------------------------------------
+Task 1 – Access the workbooks and create a database
+-------------------------------------------------------------------------------------------------------------------------
+Create a Python script (db_create.py) to perform the following tasks:
+• Open the excel files.
+• Create a PSQL database with two tables, one for each excel file. Each column in the excel files
+should correspond to a column in the tables. Make sensible decisions for attribute types.
+• Import the data from the excel files to the corresponding tables in the database.
+
+
+-------------------------------------------------------------------------------------------------------------------------
+Task 2 – Query the database:
+-------------------------------------------------------------------------------------------------------------------------
+Create a Python script (sql_food.py) to perform the following tasks:
+• List the distinctive businesses that have had at least 1 violation ordered alphabetically to the
+console and then write their name, address, zip code and city into a new database table called
+“Previous Violations”.
+• Print a count of the violations for each business that has at least 1 violation to the console
+along with their name ordered by the number of violations. *SQL Hint: Group By*
+
+
+---------------------------------------------------------------------------------------------------------------------------
+Task 3 – Excel via Python :
+---------------------------------------------------------------------------------------------------------------------------
+Create a Python script (excel_food.py) to perform the following tasks:
+• Create a new workbook named “ViolationTypes.xlsx”.•
+• Create a sheet named “Violations Types”.
+Query the database and calculate the number of each type of violation based on violation code.
+• Write the relevant data into the worksheet you created. This should show the total number of
+violations, then list how that is broken down by violation code, including the description of the
+violation code. For example:
+
+code | description | count 
+
+foo1 | dirtyfloors  |  300
+foo2 | rotten food | 135
+=================
+  Total_voliations : 435 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+Task 4 – Numpy in Python	
+--------------------------------------------------------------------------------------------------------------------------
+Create a Python script (numpy_food.py) to perform the following tasks:
+• Query the database and retrieve data to calculate the average violations for every month
+between July 2015 and December 2017 for each postcode.
+• Use MatPlotLib to plot the follow data over time:
+  o The violations per month for the postcode(s) with the highest total violations o The
+violations per month for the postcode(s) with the greatest variance (difference) between
+the lowest and highest number of violations for all months.
+
+  oThe average violations per month for ALL of California (all postcodes combined) o The
+violations per month for all McDonalds and Burger Kings. This will require a new query as
+it is not grouped by postal code.
+
+
+--------------------------------------------------------------------------------------------------------------------------
+Task 5 – Report
+--------------------------------------------------------------------------------------------------------------------------
+After developing all of your scripts, you need to take the information and present it in a brief executive-
+style report. You may use the provided template as is, modify it, or come up with your own. Do not
+simply paste data from the console/excel into each section in the template – present the data in a
+professional manner.
+
+
+
