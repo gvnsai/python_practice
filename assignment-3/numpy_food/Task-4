@@ -1,0 +1,13 @@
+Task 4 – Numpy in Python	
+
+Create a Python script (numpy_food.py) to perform the following tasks:
+• Query the database and retrieve data to calculate the average violations for every month
+between July 2015 and December 2017 for each postcode.
+• Use MatPlotLib to plot the follow data over time:
+o The violations per month for the postcode(s) with the highest total violations o The
+violations per month for the postcode(s) with the greatest variance (difference) between
+the lowest and highest number of violations for all months.
+o
+The average violations per month for ALL of California (all postcodes combined) o The
+violations per month for all McDonalds and Burger Kings. This will require a new query as
+it is not grouped by postal code.
