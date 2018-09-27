@@ -1,0 +1,7 @@
+Task 1 – Access the workbooks and create a database
+
+Create a Python script (db_create.py) to perform the following tasks:
+• Open the excel files.
+• Create a PSQL database with two tables, one for each excel file. Each column in the excel files
+should correspond to a column in the tables. Make sensible decisions for attribute types.
+• Import the data from the excel files to the corresponding tables in the database.
