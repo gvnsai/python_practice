@@ -1,0 +1,17 @@
+first you have to create database here am using mysqldb
+
+1.how create db
+	-> create  database test(dbname);
+
+2.here we have to choose the usage of dbname
+	-> use test;
+
+3.create table
+	-> create table violations(points INT,serial_number varchar(150),violation_code varchar(150),violation_description varchar(150),violation_status varchar(150));
+
+4. show the number records in a table
+	-> select * from violations(table_name);
+
+create table inspections:--
+
+create table inspections(activity_date date,employee_id varchar(150),facility_address varchar(150),facility_city varchar(150),facility_id varchar(150),facility_name varchar(150),facility_state varchar(150),facility_zip varchar(150),grade varchar(150),owner_id varchar(150),owner_name varchar(150),pe_description varchar(150),program_element_pe INT,program_name varchar(150),program_status varchar(150),record_id varchar(150),score INT,serial_number varchar(150),service_code INT,service_description varchar(150));
